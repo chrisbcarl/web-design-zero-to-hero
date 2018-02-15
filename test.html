@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            text-align: center;  /* MSIE 5 doesn't center based on auto left/right margins, 
+                                    but 'text-align:center' does center top-level divs: */
+            min-width: 500px;      /* Specify a min-width for the body as wide as the 'wrapper'
+                                    element itself. This prevents negative (i.e. inaccessible)
+                                    left-margins in narrow browser windows when using 
+                                    Navigator 6+/Mozilla on Win32: */
+            padding: 100px, 100px;
+        }
+        .wrapper {
+            text-align: left;    /* Reset alignment to compensate for 'text-align:center': */
+            width: 500px;        /* Specify the width of the element. This should be the same
+                                    as 'body min-width': */
+            margin-left: auto;   /* Set left and right margins to auto, thus centering the 
+                                    element in the containing (body) tag: */
+            margin-right: auto;
+
+            border-color: blue;
+            border-style: solid;
+            border-width: 2px;
+        }
+    </style>
+</head>
+    <body>
+        <div class="wrapper">
+            <h1>hello world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio culpa, iste suscipit distinctio beatae quibusdam, natus vero earum provident ex molestias, hic similique consectetur totam est minus iusto accusantium esse.</p>
+        </div>
+    </body>
+</html>
