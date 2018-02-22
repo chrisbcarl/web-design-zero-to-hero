@@ -27,21 +27,7 @@
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
-    <nav>
-        <button><a href="./01-html-intro.html">Go back to the beginning!</a></button>
-        <select id="select-a-link">
-            <option value="null">default option</option>
-            <option value="./01-html-intro.html">Lesson 1, What is HTML?</a></option>
-            <option value="./02-html-resume.html">Lesson 2, Make a Resume with HTML!</a></option>
-            <option value="./03-css-intro.html">Lesson 3, What is CSS?</a></option>
-            <option value="./04-css-resume.html">Lesson 4, Use CSS on a Resume!</a></option>
-            <option value="./05-bootstrap-intro.html">Lesson 5, What is Bootstrap?</a></option>
-            <option value="./06-bootstrap-resume.html">Lesson 6, Make a Beautiful Resume with Bootstrap!</a></option>
-        </select>
-        <button id="navigate-to-link">Go there!</button>
-    </nav>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
@@ -271,7 +257,7 @@
     </footer>
     <footer>
         <h3>This is a footer! It's where you put links to other places and things.</h3>
-        <table>
+        <table style="width: 100%;">
             <tr>
                 <td><strong>Chris Carl, BS CS/CE FAU 2018</strong></td>
                 <td><strong>Lukas Garcia, MS CS FAU 2020</strong></td>
@@ -281,6 +267,18 @@
                 <td><a href="http://zonobyte.com">Lukas' website</a></td>
             </tr>
         </table>
+        <button class="nav-item btn btn-warning"><a href="./01-html-intro.html">Go back to the beginning!</a></button>
+        <select class="nav-item ml-auto btn btn-primary" id="select-a-link">
+            <option value="null">default option</option>
+            <option value="./01-html-intro.html">Lesson 1, What is HTML?</a></option>
+            <option value="./02-html-resume.html">Lesson 2, Make a Resume with HTML!</a></option>
+            <option value="./03-css-intro.html">Lesson 3, What is CSS?</a></option>
+            <option value="./04-css-resume.html">Lesson 4, Use CSS on a Resume!</a></option>
+            <option value="./05-bootstrap-intro.html">Lesson 5, What is Bootstrap?</a></option>
+            <option value="./06-bootstrap-resume.html">Lesson 6, Make a Beautiful Resume with Bootstrap!</a></option>
+        </select>
+        <button class="nav-item btn btn-primary" id="navigate-to-link">Go there!</button>
+    
     </footer>
 
     <script src="scripts/tutorial-navbar.js" type="text/javascript"></script>
