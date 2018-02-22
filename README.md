@@ -11,20 +11,20 @@ Ever wondered what it takes to make a website? How about making sure the whole w
 1. Introduction to HTML [Example](http://webdesignzerotohero.net/intro-to-html-css/01-html-intro.html):
    HTML and Google Chrome is like a .docx and Microsoft Word. Google Chrome displays  
    .html files just like how Word displays .docx.
-   HTML is all about tags. Tags are anything that are enclosed in angle brackets like '''<p>Some stuff inside</p>''' to display a paragraph.
+   HTML is all about tags. Tags are anything that are enclosed in angle brackets like ```<p>Some stuff inside</p>``` to display a paragraph.
    The tags we will be covering include:
-   * '''<div></div>''' - a divider
-   * '''<span></span>''' - a tag that spans some text
-   * '''<h1></h1>''' - headers
-   * '''<p></p>''' - paragraph
-   * '''<a></a>''' - a clickable link
-   * '''<table></table>''', '''<tr></tr>''', '''<td></td>'''  
+   * ```<div></div>``` - a divider
+   * ```<span></span>``` - a tag that spans some text
+   * ```<h1></h1>``` - headers
+   * ```<p></p>``` - paragraph
+   * ```<a></a>``` - a clickable link
+   * ```<table></table>```, ```<tr></tr>```, ```<td></td>```  
    - table, table row, table data
-   * '''<ul></ul>''', '''<ol></ol>''', '''<li></li>''' - unordered  
+   * ```<ul></ul>```, ```<ol></ol>```, ```<li></li>``` - unordered  
    lists (bullet points), ordered lists (numbered), and list items 
-   * '''<strong></strong>''', '''<em></em>''' - bold and italicize
-   * '''<img></img>''' - images
-   * '''<form></form>''', '''<input></input>''', '''<button></button>''' - all ways  
+   * ```<strong></strong>```, ```<em></em>``` - bold and italicize
+   * ```<img></img>``` - images
+   * ```<form></form>```, ```<input></input>```, ```<button></button>``` - all ways  
    to create a form
    
    You can learn all more about the how to write HTML through the following links:
@@ -40,24 +40,24 @@ Ever wondered what it takes to make a website? How about making sure the whole w
    CSS is powerful and can help you create websites that are elegant and communicate  
    a visual language.
    CSS That Alters Text
-   * '''color: darkred;'''
-   * '''text-align: center;'''
-   * '''text-decoration: underline;'''
-   * '''text-indent: 150px;'''
-   * '''text-justify: inter-word;'''
-   * '''text-transform: lowercase;'''
-   * '''font-family: sans-serif;'''
-   * '''font-size: 25px;'''
-   * '''font-weight: bold;'''
-   * '''font-style: italic;'''
+   * ```color: darkred;```
+   * ```text-align: center;```
+   * ```text-decoration: underline;```
+   * ```text-indent: 150px;```
+   * ```text-justify: inter-word;```
+   * ```text-transform: lowercase;```
+   * ```font-family: sans-serif;```
+   * ```font-size: 25px;```
+   * ```font-weight: bold;```
+   * ```font-style: italic;```
 
 CSS That Alters The Size of the Container
-   * '''height: 200px;'''
-   * '''width: 400px;'''
-   * '''padding-right: 50px;'''
-   * '''padding-bottom: 150px;'''
-   * '''margin-top: 100px;'''
-   * '''margin-bottom: 300px;'''
+   * ```height: 200px;```
+   * ```width: 400px;```
+   * ```padding-right: 50px;```
+   * ```padding-bottom: 150px;```
+   * ```margin-top: 100px;```
+   * ```margin-bottom: 300px;```
 
    You can learn all more about the how to write CSS through the following links:
    *[CSS Tutorial @ W3 Schools](https://www.w3schools.com/Css/)
