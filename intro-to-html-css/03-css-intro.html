@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styling Documents with CSS!</title>
+    
+    <!-- the preffered method of storing css styles -->
+    <link rel="stylesheet" href="styles/css-intro-style.css">
+
+    <style>
+        div {
+            color: darkgreen;
+            background-color:sienna;
+        }
+        p {
+            color: yellowgreen;
+            background-color:steelblue;
+        }
+        body {
+            color:teal;
+            background-color:rgba(50, 50, 50, 0.5);
+        }
+
+        #id-one {
+            border-color: red;
+            border-style: solid;
+            border-width: 2px;     
+        }
+
+        #id-two {
+            font-size: 50px;
+        }
+
+        .class-one {
+            background-color: rgba(255, 255, 0, 0.5);
+        }
+
+        .class-two {
+            text-decoration: overline; 
+        }
+
+        .class-three {
+            color: gold;
+        }
+
+        .class-four {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* stolen from https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_display */
+        p {color: red;}
+
+        p.ex1 {display: none;}
+        p.ex2 {display: inline;}
+        p.ex3 {display: block;}
+        p.ex4 {display: inline-block;}
+
+        /*stolen from https://www.w3schools.com/cssref/css3_pr_columns.asp */
+        .newspaper {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
+
+            /* -webkit-column-rule: 4px double #ff00ff;
+            -moz-column-rule: 4px double #ff00ff;
+            column-rule: 4px double #ff00ff; */
+        }
+    </style>
+    </head>
+    <body id="containter">
+        <nav>
+            <button><a href="./01-html-intro.html">Go back to the beginning!</a></button>
+            <select id="select-a-link">
+                <option value="null">default option</option>
+                <option value="./01-html-intro.html">Lesson 1, What is HTML?</a></option>
+                <option value="./02-html-resume.html">Lesson 2, Make a Resume with HTML!</a></option>
+                <option value="./03-css-intro.html">Lesson 3, What is CSS?</a></option>
+                <option value="./04-css-resume.html">Lesson 4, Use CSS on a Resume!</a></option>
+                <option value="./05-bootstrap-intro.html">Lesson 5, What is Bootstrap?</a></option>
+                <option value="./06-bootstrap-resume.html">Lesson 6, Make a Beautiful Resume with Bootstrap!</a></option>
+            </select>
+            <button id="navigate-to-link">Go there!</button>
+        </nav>
+        <div id="content">
+            <!-- victim div of inner styles -->
+            <div style="
+                /* text-related */
+                color: darkred;
+                text-align: center;
+                text-decoration: underline;
+                text-indent: 150px;
+                text-justify: inter-word;
+                text-transform: lowercase;
+
+
+                /* font-related */
+                font-family: sans-serif;
+                font-size: 25px;
+                font-weight: bold;
+                font-style: italic;
+
+                /* tag-dimensions-related */
+                height: 200px;
+                width: 400px;
+
+                padding-right: 50px;
+                padding-bottom: 150px;
+                margin-top: 100px;
+                margin-bottom: 300px;
+            ">
+                <p>This is the 'worst' way of doing styling.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non perspiciatis possimus, molestiae ipsam quaerat quis aspernatur eligendi tempore minima. Voluptatum ab libero accusantium et rerum ratione! Doloremque, quos consectetur. Enim?</p>
+            </div>
+
+
+            <div id="id-one">
+                text inside the div of id="id-<strong>one</strong>"
+                <p>
+                    text inside a div with id="id-<strong>one</strong>" <br>
+                    Text we want to change up
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi, doloribus eaque vero dolorum veniam illo itaque quia, obcaecati consequatur tenetur? Sunt quia assumenda nihil impedit fuga neque excepturi ea.</p>
+            </div>
+
+
+            <div>
+                text inside the div of id=""
+                <p id="id-two">
+                    text with id="id-<strong>two</strong>" <br>
+                    Some more text we want to change
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi, doloribus eaque vero dolorum veniam illo itaque quia, obcaecati consequatur tenetur? Sunt quia assumenda nihil impedit fuga neque excepturi ea.</p>
+            </div>
+
+
+            <div class="class-one">
+                text inside the div of class="class-<strong>one</strong>"
+                <p class="text-class">
+                    div has class="class-<strong>one</strong>", text has class="text-class"<br>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi, doloribus eaque vero dolorum veniam illo itaque quia, obcaecati consequatur tenetur? Sunt quia assumenda nihil impedit fuga neque excepturi ea.</p>
+                <div class="class-two">
+                    text inside the div of class="class-<strong>one</strong>"
+                    <p class="text-class">
+                        div has class="class-<strong>two</strong>", text has class="text-class" <br>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi, doloribus eaque vero dolorum veniam illo itaque quia, obcaecati consequatur tenetur? Sunt quia assumenda nihil impedit fuga neque excepturi ea.</p>
+                </div>
+            </div>
+
+            <!-- stolen from https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_display -->
+            <h2>display: none:</h2>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+            </div>
+            
+            <h2>display: inline (default):</h2>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+            </div>
+            
+            <h2>display: block:</h2>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+            </div>
+            
+            <h2>display: inline-block:</h2>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+            </div>
+
+            <!-- giving images a "filter" -->
+            <div>
+                <img src="img/big-bang.jpeg" alt="big bang theory" width="500px">
+                <img src="img/friends.jpeg" alt="friends" width="500px">
+                <img src="img/himym.jpg" alt="how i met your mother" width="500px">
+            </div>
+            <div>
+                <img class="black-white" src="img/big-bang.jpeg" alt="big bang theory" width="500px">
+                <img class="sepia" src="img/friends.jpeg" alt="friends" width="500px">
+                <img class="instagram" src="img/himym.jpg" alt="how i met your mother" width="500px">
+            </div>
+        </div>
+
+        <footer>
+            <div class="newspaper">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, blanditiis autem expedita aut tempora odio nesciunt minima ea natus repellendus recusandae impedit, hic consequuntur vitae, earum dolorem corrupti? Beatae, non.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum consectetur, libero accusamus non laudantium possimus. Hic nesciunt omnis repellendus consequuntur fugit neque voluptatibus! Repudiandae magnam quasi odio perspiciatis officia laboriosam?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, obcaecati. Expedita alias optio totam odio voluptatem, consequatur excepturi ex sequi temporibus dolor laborum pariatur iure hic accusamus cumque animi dolores.
+                </p>
+            </div>
+            <h3>This is a footer! It's where you put links to other places and things.</h3>
+            <table>
+                <tr>
+                    <td><strong>Chris Carl, BS CS/CE FAU 2018</strong></td>
+                    <td><strong>Lukas Garcia, MS CS FAU 2020</strong></td>
+                </tr>
+                <tr>
+                    <td><a href="http://chriscarl.com">Chris's website</a></td>
+                    <td><a href="http://zonobyte.com">Lukas' website</a></td>
+                </tr>
+            </table>
+        </footer>
+    
+        <script src="scripts/tutorial-navbar.js" type="text/javascript"></script>
+        
+    </body>
+</html>

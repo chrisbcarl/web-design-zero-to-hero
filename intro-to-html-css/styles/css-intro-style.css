@@ -1,0 +1,29 @@
+/* stolen from https://designpieces.com/2014/09/instagram-filters-css3-effects/ */
+.black-white {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.instagram {
+    filter: sepia(0.4) saturate(2.4) brightness(1.3) contrast(1);
+}
+
+.xpro2 {
+    filter: contrast(1.3) brightness(0.8) sepia(0.3) saturate(1.5) hue-rotate(-20deg);
+
+}
+
+.walden {
+    filter: sepia(0.35) contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);
+}
+
+.what-is-this {
+    filter: 
+        sepia(0.15) saturate(1.5) contrast(0.9) 
+        sepia(0.4) saturate(2.5) hue-rotate(-30deg) contrast(0.67)
+        brightness(0.75) contrast(1.3) sepia(0.5) hue-rotate(-25deg);
+
+}

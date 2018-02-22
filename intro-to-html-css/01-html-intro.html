@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The First Web Page of the Day</title>
+</head>
+    <body>
+        <nav>
+            <button><a href="./01-html-intro.html">Go back to the beginning!</a></button>
+            <select id="select-a-link">
+                <option value="null">default option</option>
+                <option value="./01-html-intro.html">Lesson 1, What is HTML?</a></option>
+                <option value="./02-html-resume.html">Lesson 2, Make a Resume with HTML!</a></option>
+                <option value="./03-css-intro.html">Lesson 3, What is CSS?</a></option>
+                <option value="./04-css-resume.html">Lesson 4, Use CSS on a Resume!</a></option>
+                <option value="./05-bootstrap-intro.html">Lesson 5, What is Bootstrap?</a></option>
+                <option value="./06-bootstrap-resume.html">Lesson 6, Make a Beautiful Resume with Bootstrap!</a></option>
+            </select>
+            <button id="navigate-to-link">Go there!</button>
+        </nav>
+
+        <h1>This is the largest Heading</h1>
+        <p>This is a paragraph. Lorem ipsum is a latin phrase that is gibberish and is meant to be filler text. Perfect for making a tutorial!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni doloremque ducimus ullam perferendis eaque iusto cum aliquid natus, libero consequatur, voluptas aliquam tenetur ipsa velit minima aut asperiores optio praesentium!</p>
+
+        <h2>This is the second largest Heading</h2>
+        <span>This is a span. Spans don't display with blocking. They are inline.</span>
+        
+        <h6>This is the smallest Heading</h6>
+        <div>and the div text is larger than the heading text.</div>
+        <div>a div can contain text as well as other tags. It displays with blocking like many other text tags.</div>
+
+        <h3>This is the title size I'll go with now.</h3>        
+        <p>
+            We can break up sentences <br> 
+            midway if we really want to. <br> 
+            We bold text by making them <strong>strong</strong>, <br><br> 
+            we <em>emphasize</em> text with
+        </p>
+
+        <!-- I am a comment. I won't be seen on the website. -->
+        <hr>
+        <!-- that was a horizontal row! -->
+
+        <!-- Lists -->
+        <div>
+            <h3>Unordered lists are great</h3>
+            <p>
+                Explanation: <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quod nostrum aspernatur, impedit incidunt animi veniam id soluta molestias deserunt modi tenetur voluptatum suscipit numquam similique laudantium nisi unde eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in repellendus culpa dignissimos mollitia dolorem similique eos dolore pariatur ea inventore deleniti temporibus harum doloribus consectetur voluptatibus, praesentium autem quo.
+            </p>
+            <h4>And here's why:</h5>
+            <ul>
+                <li>Reason 1 - you get to list things</li>
+                <li>Reason 2 - you can nest things in your list</li>
+                <li>
+                    <p>Reason 3 - Has a paragraph in it<p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cumque aspernatur suscipit natus saepe sequi debitis error iste officiis laudantium explicabo ipsam eos, voluptatum delectus laborum molestiae quae cum tempore.</p>   
+                </li>
+            </ul>
+            <p>Now we're going to introduce links!</p>
+            <ul>
+                <li>
+                    <a>super broken google</a>
+                    <p>notice how this link is not clickable.</p>
+                    <p>we didn't include the actual link in an <strong>href</strong> attribute</p>
+                </li>
+                <li>
+                    <a href="google.com">broken google</a>
+                    <p>this link will take us to a weird place. Let's fix it with <em>http://</em></p>
+                </li>
+                <li>
+                    <a href="http://google.com">google.com</a>
+                    <p>Google works again!</p>
+                </li>
+                <li>
+                    <p>
+                        <a href="http://google.com" target="_blank">google.com in a new tab</a> is accomplished by adding the <em>target="_blank"</em> attribute set.
+                    </p>
+                    <p>notice how an a tag inside a p makes it work in a sentence.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 2, a todo list with a picture -->
+        <div>
+            <h3>Ordered lists are also pretty cool</h3>
+            <p>
+                <strong>Explanation: </strong> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quod nostrum aspernatur, impedit incidunt animi veniam id soluta molestias deserunt modi tenetur voluptatum suscipit numquam similique laudantium nisi unde eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in repellendus culpa dignissimos mollitia dolorem similique eos dolore pariatur ea inventore deleniti temporibus harum doloribus consectetur voluptatibus, praesentium autem quo.
+            </p>
+            <h4>And here's why:</h5>
+            <ol>
+                <li>Reason 1 - you get to list things</li>
+                <li>Reason 2 - you can nest things in your list</li>
+                <li>
+                    <p>Reason 3 - Has an image in it instead.<p>
+                    <p>Notice how the image has a 'src' attribute and an 'alt' attribute. </p>
+                    <img src="img/doge.png" alt="Doge dog" width="100px">
+                    <img src="img/small.JPG" alt="This image is small" width="100px">
+
+                    <p>Notice how the images are coming one after another. Same as span.</p>
+                    <img src="img/doge.png" alt="Doge dog" height="100px">
+                    <img src="img/small.JPG" alt="This image is small" height="100px">
+                    <img src="img/doge.png" alt="Doge dog" width="200px" height="100px">
+                    <img src="img/small.JPG" alt="This image is small" width="100px" height="200px">
+                    <p>You can set images to either be bounded by width, height, or both. if you don't specify they'll look like this:</p>
+                    <img src="../logo/giphy-2.gif" alt="Hero gif">
+                    <p>if you don't know the size, that could make things really explode.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>Here's a table of things you'll learn today! <span><img src="icons/001-embarrassed-4.svg" alt="" height="15px"></span></h3>
+            <table>
+                <!-- top row, defines your headers -->
+                <thead>
+                    <!-- this is a table row -->
+                    <tr>
+                        <!-- this is a table heading, and its centered -->
+                        <th>Concept</th>
+                        <th>Thing</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <!-- generic table data -->
+                        <td><strong>Concept</strong></td>
+                        <td><strong>Thing</strong></td>
+                        <td><strong>Explanation</strong></td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td><img src="../logo/html-logo.png" alt="" height="50px"></td>
+                        <td>
+                            <p>
+                                HTML is for <br>
+                                defining the <br>
+                                text of your <br>
+                                website.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td><img src="../logo/css-logo.png" alt="" height="70px"></td>
+                        <td>
+                            <span>
+                                CSS is for making your website look good.
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>See how this one cell data</td>
+                        <td>Affects all the rest of the table! It causes weird but potentially useful things to happen and we can exploit them</td>
+                        <td>
+                            <div>
+                                <h5>Trying to break the table</h5>
+                                <p>is working out <img src="icons/006-laughing-3.svg" alt="laughing emoji">
+                                    <span>Notice how the emoji's height is being bounded by the width of this current cell!</span>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- For further reading, forms and inputs! -->
+        <div>
+            <form action="/action_page.php">
+                First name:<br>
+                <input type="text" name="firstname" value="Mickey"><br>
+                Last name:<br>
+                <input type="text" name="lastname" value="Mouse"><br><br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+                <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+                <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+                <input type="submit" onclick="window.location = '#' "value="Go to top">
+                <input type="reset">
+                <input type="button" onclick="alert('Virus downloaded! just kidding, I can put anything I want here since it\'s just Javascript. Also javascript can\'t touch your files from a browser. :)')" value="Click me to get a scary alert!">
+            </form>
+        </div>
+
+        <footer>
+            <h3>This is a footer! It's where you put links to other places and things.</h3>
+            <table>
+                <tr>
+                    <td><strong>Chris Carl, BS CS/CE FAU 2018</strong></td>
+                    <td><strong>Lukas Garcia, MS CS FAU 2020</strong></td>
+                </tr>
+                <tr>
+                    <td><a href="http://chriscarl.com">Chris's website</a></td>
+                    <td><a href="http://zonobyte.com">Lukas' website</a></td>
+                </tr>
+            </table>
+        </footer>
+
+        <script src="scripts/tutorial-navbar.js" type="text/javascript"></script>
+    </body>
+</html>
