@@ -1,8 +1,8 @@
 # Web Design: Zero to Hero
 Ever wondered what it takes to make a website? How about making sure the whole world can see it? We'll teach you the fundamentals of how this works and how you can get started!  
 
-(Part I on YouTube)[]  
-(Part II on YouTube)[]  
+(Part I on YouTube)[#]  
+(Part II on YouTube)[#]  
 
 
 ## Part I: Learning Website Fundamentals
@@ -23,12 +23,12 @@ Ever wondered what it takes to make a website? How about making sure the whole w
    * ```<form></form>```, ```<input></input>```, ```<button></button>``` - allways to create a form  
    
    You can learn all more about the how to write HTML through the following links:  
-   *[HTML Tutorial @ W3 Schools](https://www.w3schools.com/html/)  
-   *[HTML Reference Documents @ W3 Schools](https://www.w3schools.com/tags/default.asp)  
+   * [HTML Tutorial @ W3 Schools](https://www.w3schools.com/html/)  
+   * [HTML Reference Documents @ W3 Schools](https://www.w3schools.com/tags/default.asp)  
 
 2. Practicing HTML on a Resume [Example](http://webdesignzerotohero.net/intro-to-html-css/02-html-resume.html):  
    You can learn all more about the how to write HTML through the following links:  
-   *[Example Paralegal](https://www.monster.com/career-advice/article/paralegal-resume-sample)  
+   * [Example Paralegal](https://www.monster.com/career-advice/article/paralegal-resume-sample)  
 
 3. Introduction to CSS [Example](http://webdesignzerotohero.net/intro-to-html-css/03-css-intro.html):  
    CSS is a pseudo-language that allows you to display .html with style. CSS is powerful and can help you create websites that are elegant and communicate a visual language.  
@@ -44,7 +44,7 @@ Ever wondered what it takes to make a website? How about making sure the whole w
    * ```font-weight: bold;```
    * ```font-style: italic;```
 
-CSS That Alters The Size of the Container
+   CSS That Alters The Size of the Container
    * ```height: 200px;```
    * ```width: 400px;```
    * ```padding-right: 50px;```
@@ -53,8 +53,8 @@ CSS That Alters The Size of the Container
    * ```margin-bottom: 300px;```
 
    You can learn all more about the how to write CSS through the following links:  
-   *[CSS Tutorial @ W3 Schools](https://www.w3schools.com/Css/)  
-   *[CSS Reference @ W3 Schoools](https://www.w3schools.com/cssref/default.asp)  
+   * [CSS Tutorial @ W3 Schools](https://www.w3schools.com/Css/)  
+   * [CSS Reference @ W3 Schoools](https://www.w3schools.com/cssref/default.asp)  
 
 4. Practicing CSS on a Resume [Example](http://webdesignzerotohero.net/intro-to-html-css/04-css-resume.html):  
 
@@ -63,11 +63,11 @@ CSS That Alters The Size of the Container
    Bootstrap is an elegant way of quickly developing a website quickly with style. Bootstrap is built on top of CSS and follows all of its rules, especially classes and the way the styles cascade upon one another.  
 
    You can learn all more about the how to write CSS through the following links:  
-   *[Downloading Bootstrap or Including the CDN Link](http://getbootstrap.com/docs/4.0/getting-started/introduction/)  
-   *[Get Good at Bootstrap](https://www.youtube.com/watch?v=5GcQtLDGXy8)  
-   *[Great Themes to Try Out!](https://startbootstrap.com/)  
+   * [Downloading Bootstrap or Including the CDN Link](http://getbootstrap.com/docs/4.0/getting-started/introduction/)  
+   * [Get Good at Bootstrap](https://www.youtube.com/watch?v=5GcQtLDGXy8)  
+   * [Great Themes to Try Out!](https://startbootstrap.com/)  
 
 6. Practicing Bootstrap on a Resume [Example](http://webdesignzerotohero.net/intro-to-html-css/06-html-resume.html):  
-   *[Great Themes to Try Out!](https://startbootstrap.com/)  
+   * [Great Themes to Try Out!](https://startbootstrap.com/)  
 
 ## Part II: Learning Fundamentals of the World Wide Web
