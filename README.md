@@ -8,7 +8,7 @@ Ever wondered what it takes to make a website? How about making sure the whole w
 ## Part I: Learning Website Fundamentals
 
 ### Course Outline
-1. Introduction to HTML [Example](http://webdesignzerotohero.net/01-html-intro.html):  
+1. Introduction to HTML [Example](http://webdesignzerotohero.org.s3-website.us-east-2.amazonaws.com/01-html-intro.html):  
    HTML and Google Chrome is like a .docx and Microsoft Word. Google Chrome displays .html files just like how Word displays .docx. HTML is all about tags. Tags are anything that are enclosed in angle brackets like ```<p>Some stuff inside</p>``` to display a paragraph.  
    The tags we will be covering include:  
    * ```<div></div>``` - a divider  
@@ -26,11 +26,11 @@ Ever wondered what it takes to make a website? How about making sure the whole w
    * [HTML Tutorial @ W3 Schools](https://www.w3schools.com/html/)  
    * [HTML Reference Documents @ W3 Schools](https://www.w3schools.com/tags/default.asp)  
 
-2. Practicing HTML on a Resume [Example](http://webdesignzerotohero.net/02-html-resume.html):  
+2. Practicing HTML on a Resume [Example](http://webdesignzerotohero.org.s3-website.us-east-2.amazonaws.com/02-html-resume.html):  
    You can learn all more about the how to write HTML through the following links:  
    * [Example Paralegal](https://www.monster.com/career-advice/article/paralegal-resume-sample)  
 
-3. Introduction to CSS [Example](http://webdesignzerotohero.net/03-css-intro.html):  
+3. Introduction to CSS [Example](http://webdesignzerotohero.org.s3-website.us-east-2.amazonaws.com/03-css-intro.html):  
    CSS is a pseudo-language that allows you to display .html with style. CSS is powerful and can help you create websites that are elegant and communicate a visual language.  
    CSS That Alters Text
    * ```color: darkred;```
@@ -56,10 +56,10 @@ Ever wondered what it takes to make a website? How about making sure the whole w
    * [CSS Tutorial @ W3 Schools](https://www.w3schools.com/Css/)  
    * [CSS Reference @ W3 Schoools](https://www.w3schools.com/cssref/default.asp)  
 
-4. Practicing CSS on a Resume [Example](http://webdesignzerotohero.net/04-css-resume.html):  
+4. Practicing CSS on a Resume [Example](http://webdesignzerotohero.org.s3-website.us-east-2.amazonaws.com/04-css-resume.html):  
 
 
-5. Introduction to Bootstrap [Example](http://webdesignzerotohero.net/5-bootstrap-intro.html):  
+5. Introduction to Bootstrap [Example](http://webdesignzerotohero.org.s3-website.us-east-2.amazonaws.com/5-bootstrap-intro.html):  
    Bootstrap is an elegant way of quickly developing a website quickly with style. Bootstrap is built on top of CSS and follows all of its rules, especially classes and the way the styles cascade upon one another.  
 
    You can learn all more about the how to write CSS through the following links:  
@@ -67,7 +67,7 @@ Ever wondered what it takes to make a website? How about making sure the whole w
    * [Get Good at Bootstrap](https://www.youtube.com/watch?v=5GcQtLDGXy8)  
    * [Great Themes to Try Out!](https://startbootstrap.com/)  
 
-6. Practicing Bootstrap on a Resume [Example](http://webdesignzerotohero.net/06-html-resume.html):  
+6. Practicing Bootstrap on a Resume [Example](http://webdesignzerotohero.org.s3-website.us-east-2.amazonaws.com/06-html-resume.html):  
    * [Great Themes to Try Out!](https://startbootstrap.com/)  
 
 ## Part II: Learning Fundamentals of the World Wide Web
