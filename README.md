@@ -2,7 +2,11 @@
 Ever wondered what it takes to make a website? How about making sure the whole world can see it? We'll teach you the fundamentals of how this works and how you can get started!  
 
 (Part I on YouTube)[#]  
-(Part II on YouTube)[#]  
+(Part II on YouTube)[#]
+
+Emails if you have any questiopns or run into issues:
+1) Lukas Garcia - lgarcia2013@fau.edu
+2) Chris Carl - ccarl2@fau.edu
 
 
 ## Part I: Learning Website Fundamentals
