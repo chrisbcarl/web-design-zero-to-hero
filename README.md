@@ -4,7 +4,7 @@ Ever wondered what it takes to make a website? How about making sure the whole w
 (Part I on YouTube)[#]  
 (Part II on YouTube)[#]
 
-Emails if you have any questiopns or run into issues:
+Emails of the presentors, if you have any questions:
 1) Lukas Garcia - lgarcia2013@fau.edu
 2) Chris Carl - ccarl2@fau.edu
 
