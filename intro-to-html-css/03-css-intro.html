@@ -7,7 +7,10 @@
     <title>Styling Documents with CSS!</title>
     
     <!-- the preffered method of storing css styles -->
-    <link rel="stylesheet" href="styles/css-intro-style.css">
+    <link rel="stylesheet" href="styles/insta-filters.css">
+    <link rel="stylesheet" href="styles/cascade-1.css">
+    <link rel="stylesheet" href="styles/cascade-2.css">
+    <link rel="stylesheet" href="styles/cascade-3.css">
 
     <style>
         div {
@@ -45,8 +48,13 @@
             color: gold;
         }
 
+        @font-face {
+            font-family: Roboto-Custom;
+            src: url('./fonts/roboto/Roboto-Light.tff');
+        }
+
         .class-four {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Roboto-Custom, Verdana, Geneva, Tahoma, sans-serif;
         }
 
         /* stolen from https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_display */
@@ -87,6 +95,9 @@
             </select>
             <button id="navigate-to-link">Go there!</button>
         </nav>
+        <div>
+            <span>Demonstrating the cascading style sheets (CSS)</span>
+        </div>
         <div id="content">
             <!-- victim div of inner styles -->
             <div style="
@@ -174,6 +185,8 @@
             <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
             </div>
+
+            <p class=class-four>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet voluptas incidunt voluptates suscipit quibusdam, non, ratione laboriosam autem perferendis officiis hic impedit deserunt tempore, quos at doloremque fuga provident. Eos.</p>
 
             <!-- giving images a "filter" -->
             <div>

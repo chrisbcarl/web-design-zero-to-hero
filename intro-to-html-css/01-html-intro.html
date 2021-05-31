@@ -21,7 +21,7 @@
             <button id="navigate-to-link">Go there!</button>
         </nav>
 
-        <h1>This is the largest Heading</h1>
+        <h1 id="section-top">This is the largest Heading</h1>
         <p>This is a paragraph. Lorem ipsum is a latin phrase that is gibberish and is meant to be filler text. Perfect for making a tutorial!</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni doloremque ducimus ullam perferendis eaque iusto cum aliquid natus, libero consequatur, voluptas aliquam tenetur ipsa velit minima aut asperiores optio praesentium!</p>
 
@@ -45,7 +45,7 @@
         <!-- that was a horizontal row! -->
 
         <!-- Lists -->
-        <div>
+        <div id="section-lists">
             <h3>Unordered lists are great</h3>
             <p>
                 Explanation: <br>
@@ -81,11 +81,26 @@
                     </p>
                     <p>notice how an a tag inside a p makes it work in a sentence.</p>
                 </li>
+                <li>
+                    <h4>anchors</h4>
+                    <p>You know how some things allow you to jump in the page? This is how.</p>
+                    <a href="#">"True" Top</a>
+                    <br>
+                    <a href="#section-top">Section Top</a>
+                    <br>
+                    <a href="#section-lists">Section Lists</a>
+                    <br>
+                    <a href="#section-pics">Section Pics</a>
+                    <br>
+                    <a href="#section-table">Section Table</a>
+                    <br>
+                    <a href="#section-form">Section Form</a>
+                </li>
             </ul>
         </div>
 
         <!-- Section 2, a todo list with a picture -->
-        <div>
+        <div id="section-pics">
             <h3>Ordered lists are also pretty cool</h3>
             <p>
                 <strong>Explanation: </strong> <br>
@@ -110,10 +125,14 @@
                     <img src="../logo/giphy-2.gif" alt="Hero gif">
                     <p>if you don't know the size, that could make things really explode.</p>
                 </li>
+                <li>&#033; exclamation from the ascii table</li>
+                <li>&#033; exclamation from the ascii table</li>
+                <li>spades &spades; greater than &gt;</li>
+                <li>&#x1A16; BUGINESE LETTER HA</li>
             </ol>
         </div>
 
-        <div>
+        <div id="section-table">
             <h3>Here's a table of things you'll learn today! <span><img src="icons/001-embarrassed-4.svg" alt="" height="15px"></span></h3>
             <table>
                 <!-- top row, defines your headers -->
@@ -173,8 +192,8 @@
         </div>
 
         <!-- For further reading, forms and inputs! -->
-        <div>
-            <form action="/action_page.php">
+        <div id="section-form">
+            <form>
                 First name:<br>
                 <input type="text" name="firstname" value="Mickey"><br>
                 Last name:<br>
@@ -184,7 +203,10 @@
                 <input type="radio" name="gender" value="other"> Other
                 <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
                 <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+                <br>
                 <input type="submit" onclick="window.location = '#' "value="Go to top">
+                <button type="submit">Submit the form like a normal person</button>
+                <br>
                 <input type="reset">
                 <input type="button" onclick="alert('Virus downloaded! just kidding, I can put anything I want here since it\'s just Javascript. Also javascript can\'t touch your files from a browser. :)')" value="Click me to get a scary alert!">
             </form>
