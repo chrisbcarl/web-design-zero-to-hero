@@ -63,7 +63,13 @@ Javascript is to Java like hot chocolate is to coffee. ECMA script is the cannon
     - eval()
     - call() / apply()
 - concurrency
+    - no threading, multiprocessing out of the gate
     - event loop
+    - setInterval
+    - setTimeout
+    - Promise
+        - callback hell
+        - async await
 - modules and packages
     - package management
         - npm
@@ -106,7 +112,7 @@ Javascript is to Java like hot chocolate is to coffee. ECMA script is the cannon
     - document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
     - document.cookie = "name=" + encodeURIComponent("Christopher Columbus");
         - server sessions are cookies
-    - JSON
+    - JSON. functions
 - typescript
     - superset of javascript
     - tsc transpiler
