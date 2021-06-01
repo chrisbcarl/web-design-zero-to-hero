@@ -36,38 +36,48 @@ Javascript is to Java like hot chocolate is to coffee. ECMA script is the cannon
     - foreach
     - in
     - while / do-while
+- error handling
 - functions
     - classical functions
         - default parameters
+        - variable length arguments
         - spreading
-    - lambda functions
+        - closures
+    - callback (functions as arguments)
+    - lambda / arrow functions
     - scope
         - this
         - var, let, const
-- error handling
+    - by value and by reference
+    - cloning
 - classes
     - object - json
-    - prototype
-- misc
+    - classes
+    - inheritance
+    - instanceof
+- stdlib extras
+    - Math
     - regex
-    - datetime
+    - Date
+- dynamic programming
+    - eval()
+    - call() / apply()
+- concurrency
+    - event loop
+- modules and packages
+    - package management
+        - npm
+        - npm init
+        - package json
+        - npm run
     - module development
         - amd module
         - commonjs module
         - ecma module
-    - npm
-        - npm init
-        - package json
-        - npm run
-        - npm global
-- dynamic programming
-    - eval()
-    - call() / apply()
 
 
 # Principles Unique to Javascript
 - hoisting
-    - var let const
 - strict
     - [strict overview](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
     - [transitioning to strict](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode)
@@ -90,17 +100,13 @@ Javascript is to Java like hot chocolate is to coffee. ECMA script is the cannon
         - event disable default
         - document onload obfuscation preventing console abuse
         - alert
+    - virtual dom
+        - ajax to display a csv completely dynamically with a loading bar
     - sessionstorage / localstorage
     - document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
     - document.cookie = "name=" + encodeURIComponent("Christopher Columbus");
         - server sessions are cookies
-    - JSON.
-- builtins
-    - setInterval
-    - setTimeout
-    - Promise
-        - callback hell
-        - async await
+    - JSON
 - typescript
     - superset of javascript
     - tsc transpiler
@@ -119,4 +125,4 @@ Javascript is to Java like hot chocolate is to coffee. ECMA script is the cannon
         - [Node.js Built-in Modules](https://www.w3schools.com/nodejs/ref_modules.asp)
 - General
     - [Javascript.info](https://javascript.info/js) - Wildly good resource, simply thorough, even has some good humor in there.
-
+- [Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
