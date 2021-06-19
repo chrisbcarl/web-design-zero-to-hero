@@ -60,4 +60,4 @@ promise.then(
 console.log('reading the code it looks as though it should end right after this line, but instead we got here instantly...')
 
 
-ADD A SECTION ABOUT CUSTOM EVENT FIRING AND WINDOW EVENT LISTENING VS NODE LISTENING
+// ADD A SECTION ABOUT CUSTOM EVENT FIRING AND WINDOW EVENT LISTENING VS NODE LISTENING
