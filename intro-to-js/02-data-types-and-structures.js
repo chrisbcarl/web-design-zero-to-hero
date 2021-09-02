@@ -37,17 +37,27 @@ console.log(f0)
 i0 = BigInt(12)  // not a constructor
 i1 = BigInt(12 * 12)
 i2 = BigInt(12 ** 12)
+// no dice on these
+// BigInt(12 ** 12 ** 12)  // BigInt(12) + Number(12)
 console.log(i0, i1, i2)
 console.log(typeof(i0))
 
 
 // boolean
 b0 = new Boolean(true)
-b1 = new Boolean(0)
-b2 = new Boolean('hello?')
-b3 = new Boolean(NaN)
+b1 = new Boolean(false)
+b2 = new Boolean(0)
+b3 = new Boolean(69)
+b4 = new Boolean(-3)
+b5 = new Boolean('')
+b6 = new Boolean('hello?')
+b7 = new Boolean(NaN)
+b8 = new Boolean(undefined)
 console.log(b0, b1, b2, b3)
 console.log(typeof(b0))
+
+/* TODO: operands */
+console.log(b3 + b4)  // is an int
 
 
 // strings
@@ -69,6 +79,11 @@ console.log(s4)
 console.log(typeof(s0))
 
 
+/* TODO: operations */
+'69' + 1  // 70
+'11' - 1 // 10
+
+
 // lists
 l0 = Array(0)
 l1 = new Array(10)
@@ -81,9 +96,11 @@ console.log(l0, l1, l2, l3, l4)
 idx = l4.indexOf(false)
 joined = l4.join('-')
 console.log(idx, joined, l4.length)
-popped = l4.pop()
-l4.shift(l4.length - 2)
+popped = l4.pop()  // remove and return the last element
+l4.shift()  // remove and return the first element
 console.log(l4.length, l4)
+l4 = l4.slice(7)  // return the rest of the list after the provided index 
+console.log(l4)
 console.log(typeof(l0), Array.isArray(l0))
 
 
@@ -115,6 +132,7 @@ console.log(JSON.stringify(h0, null, 4))
 // https://javascript.info/arraybuffer-binary-arrays
 buffer = new ArrayBuffer(4);  // 4 bytes
 view = new Uint32Array(buffer);  // meaning only room for 1 UInt32 number in there
+// how do i actually put a number in here
 console.log(buffer)
 console.log(view)
 view = new Float32Array(new ArrayBuffer(64));  // will contain 16 floats
