@@ -112,5 +112,8 @@ console.log(typeof(console))  // not helpful
 // console.log('1' in '123')  // doesn't work
 console.log('1' in ['1', '2', '3'])
 console.log('1' in {2: ['1', '2', '3']})
-console.log(({2: 2}).hasOwnProperty('1'))
-console.log(({2: 2}).b !== undefined)
+console.log(({3: 5}).hasOwnProperty('1'))
+console.log(({3: 5}).hasOwnProperty('3'))
+console.log(({3: 5}).hasOwnProperty('5'))
+console.log(({2: 1}).b === undefined)
+console.log(({b: 2}).b !== undefined)

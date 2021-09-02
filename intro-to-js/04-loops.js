@@ -8,29 +8,38 @@
 array = [1, 2, 3]
 dictionary = {a: 1, b: 2, c: 3}
 for (let index = 0; index < array.length; index++) {
+    // through an array
     const element = array[index];
     console.log(element)
 }
 dictionary_keys = Object.keys(dictionary)
 for (let index = 0; index < dictionary_keys.length; index++) {
+    // through an dict
     const key = dictionary_keys[index];
     const value = dictionary[key]
     console.log(key, value)
 }
 
 
-// of
-for (const iterator of array) {
-    console.log(iterator)
+// of - only through arrays, not dictionaries
+for (const element of array) {
+    console.log(element)
 }
 for (const key of Object.keys(dictionary)) {
+    console.log(key, dictionary[key])
+}
+for (const index in array) {
+    console.log(index)
+}
+for (const index of Object.keys(dictionary)) {
+    const key = Object.keys(dictionary)[index]
     console.log(key, dictionary[key])
 }
 
 
 // foreach
 array.forEach(element => {
-    console.log(element)    
+    console.log(element)
 });
 
 Object.keys(dictionary).forEach((element) => {
@@ -51,7 +60,7 @@ for (const key in dictionary) {
 i = 0
 while (i < array.length) {
     console.log(array[i])
-    i += 1   
+    i += 1
 }
 
 

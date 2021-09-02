@@ -28,10 +28,10 @@ for (let index = 0; index < 5; index++) {
 var regex_docs = `
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
-Character classes   \\, ., \\cX, \\d, \\D, \\f, \\n, \\r, \\s, \\S, \\t, \\v, \\w, \\W, \\0, \\xhh, \\uhhhh, \\uhhhhh, [\\b]	
-Assertions          ^, $, x(?=y), x(?!y), (?<=y)x, (?<!y)x, \\b, \\B	
-Groups and ranges   (x), (?:x), (?<Name>x), x|y, [xyz], [^xyz], \\Number	
-Quantifiers         *, +, ?, x{n}, x{n,}, x{n,m}	
+Character classes   \\, ., \\cX, \\d, \\D, \\f, \\n, \\r, \\s, \\S, \\t, \\v, \\w, \\W, \\0, \\xhh, \\uhhhh, \\uhhhhh, [\\b]
+Assertions          ^, $, x(?=y), x(?!y), (?<=y)x, (?<!y)x, \\b, \\B
+Groups and ranges   (x), (?:x), (?<Name>x), x|y, [xyz], [^xyz], \\Number
+Quantifiers         *, +, ?, x{n}, x{n,}, x{n,m}
 
 
 methods

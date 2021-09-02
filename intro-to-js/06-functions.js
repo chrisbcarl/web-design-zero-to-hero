@@ -32,9 +32,10 @@ function default_parameters(a, b, c=3) {
 
 no_params_still_can_be_passed()
 no_params_still_can_be_passed(arg1, arg2, arg3)
-classical(1, 2, 3)
-tuple = classical(1, 2, 3, 4)  // overloaded call
-console.log(tuple)
+single_variable = classical(1, 2, 3)
+console.log(single_variable)
+not_a_tuple = classical(1, 2, 3, 4)  // overloaded call
+console.log(not_a_tuple)
 classical(1)  // unpassed parameters default to undefined, and goes to longest function definition
 default_parameters(1, 2)  // the arguments keyword contains all arguments passed in
 
@@ -100,9 +101,12 @@ lambda1 = function(args, or, not) {
     console.log('arguments keyword is undefined for lambdas!')
 }
 lambda1(arg1, arg2, arg3)
+lambda_no_args = function() {
+    console.log('lambda without any arguments')
+}
 
-arrow1 = () => {
-    console.log('anonymously invoking a function also with no name, this one defined with the arrow syntax')
+arrow1 = (param1) => {
+    console.log('anonymously invoking a function also with no name, this one defined with the arrow syntax', param1)
     console.log('arguments keyword is undefined for lambdas!')
     return 'multiline arrow'
 }
@@ -126,7 +130,7 @@ get_data(
 }
 
 function func_scope() {
-    console.log('must more reasonable scope')
+    console.log('much more reasonable scope')
 }
 
 arrow3 = () => 'tis is the oneline scope (this function returns this string)'
@@ -137,12 +141,15 @@ console.log(arrow3())
 console.log(arrow4())
 
 
-// this
+// this global scope
 console.log('global this', this)
+
+// this within a scope
 {
     console.log('inner scope this', this)
 }
 
+// this within a function
 function func_scope() {
     console.log('func_scope this', this)
 }
@@ -177,27 +184,27 @@ console.log('arg1 value post-func in global', arg1)
 
 // reference or by value?
 function modify_number(variable) {
-    console.log(variable)
+    console.log('pre', variable)
     variable = 69
 }
 
 function modify_boolean(variable) {
-    console.log(variable)
+    console.log('pre', variable)
     variable = false
 }
 
 function modify_string(variable) {
-    console.log(variable)
+    console.log('pre', variable)
     variable = 'modified'
 }
 
 function modify_array(variable) {
-    console.log(variable)
+    console.log('pre', variable)
     variable.push('modified')
 }
 
 function modify_dictionary(variable) {
-    console.log(variable)
+    console.log('pre', variable)
     variable.modified = 'modified'
 }
 
@@ -217,13 +224,13 @@ modify_dictionary(dict)
 modify_array(array2)
 modify_dictionary(dict2)
 
-console.log(num)  // acts like a value
-console.log(bool)  // acts like a value
-console.log(string)  // acts like a value
-console.log(array)  // acts like a reference
-console.log(dict)  // acts like a reference
-console.log(array2)  // const is a const to the pointer, not to the value
-console.log(dict2)  // const is a const to the pointer, not to the value
+console.log('post', num)  // acts like a value
+console.log('post', bool)  // acts like a value
+console.log('post', string)  // acts like a value
+console.log('post', array)  // acts like a reference
+console.log('post', dict)  // acts like a reference
+console.log('post', array2)  // const is a const to the pointer, not to the value
+console.log('post', dict2)  // const is a const to the pointer, not to the value
 
 // there is no "clone" method. external modules like lodash provide this or you'll have to write your own.
 // https://javascript.info/object-copy#nested-cloning
