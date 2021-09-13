@@ -81,3 +81,40 @@ console.log(
     new Date(Date.parse('2021-01-01T08:11:36.969Z')),  // from posix
     new Date(Date.parse('2021-01-01 08:11:36.969')),  // from posix, (i ran this in PDT) 8 hours after the above one...
 )
+
+
+// JSON
+obj = {
+    a: 1,
+    b: 'lol',
+    lol: 'b'
+}
+console.log('not real json', obj)
+
+serialized = JSON.stringify(obj)
+console.log('real json', serialized)
+
+nice = JSON.stringify(obj, null, 4)  // this is real and pretty json
+console.log('nice json', nice)
+
+
+obj_again = JSON.parse(serialized)
+obj_again2 = JSON.parse(nice)
+console.log('indents or not dont matter')
+
+
+// an honest to god object with behavior
+obj = {
+    a: 1,
+    print: function() {console.log(this.a)}
+}
+serialized = JSON.stringify(obj)
+console.log('attempted to serialize the honest to god object with behavior', serialized)
+obj_again = JSON.parse(serialized)
+try {
+    obj_again.print();
+} catch(err) {
+    console.log('the deserialization lost its functions')
+    console.error(err)
+}
+console.log(obj_again);

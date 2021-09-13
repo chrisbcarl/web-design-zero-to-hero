@@ -5,17 +5,24 @@ Living project that i'll build over time with the express intent of building som
 # Objectives
 1. [HTML/CSS](./intro-to-html-css/README.md)
 2. [JS](./intro-to-js/README.md)
-3. Bootstrap / jQuery
-4. Develop Locally
-5. API's and Server Side
-6. Databases
-7. Frameworks
+3. Application Part 1
+    - create a website
+         - login, user, pass, experiation, cookies, localstorage
+         - swapi.com
+4. Bootstrap / jQuery - Develop Locally
+5. Application Part 2
+6. API's and Server Side
+7. Application Part 3
+8. SQL Databases
+9. Application Part 4
+10. Deployment on Cloud Services
+11. Application Part 5
+12. Frameworks
    - server-side MVC
    - client-side MVVM
-8. Desktop / Mobile
+13. Desktop / Mobile
    - WPF
    - Android Studio
    - Swift
-9. Deployment on Cloud Services
 
 

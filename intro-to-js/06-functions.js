@@ -24,10 +24,15 @@ function classical(a, b, c, d) {
     return {a: a, b: b, c: c, d: d}
 }
 
-function default_parameters(a, b, c=3) {
-    console.log(a, b, c)
+function default_parameters(a, b, c=3, d=6) {
+    console.log(a, b, c, d)
     console.log('arguments shape when positionals are mixed with optionals', arguments)
 }
+
+default_parameters(1, 2, d=6)  // this will fill in c... unfortunately
+default_parameters(1, 2, undefined, d=6)  // this will provide expected behavior
+default_parameters(1, 2, null, d=6)  // this will NOT provide expected behavior, c will be null
+
 
 
 no_params_still_can_be_passed()
