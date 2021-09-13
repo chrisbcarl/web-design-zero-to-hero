@@ -3,8 +3,8 @@ Living project that i'll build over time with the express intent of building som
 
 
 # Objectives
-1. [HTML/CSS](./intro-to-html-css/README.md)
-2. [JS](./intro-to-js/README.md)
+1. [HTML/CSS](./01-intro-to-html-css/README.md)
+2. [JS](./02-intro-to-js/README.md)
 3. Application Part 1
     - create a website
          - login, user, pass, experiation, cookies, localstorage
