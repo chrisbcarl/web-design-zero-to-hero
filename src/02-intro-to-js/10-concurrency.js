@@ -10,18 +10,21 @@ repeat_function = () => {
 }
 
 
+console.log('dropping a bomb that will go off in 100ms...')
 var what_will_run_in_100ms = setTimeout(
     repeat_function,
     100
 )
+console.log('dropping a tumbler that will go fire off in 690ms and again 690ms after that indefinitely...')
 var what_will_repeat_every_690ms = setInterval(
     repeat_function,
     690
 )
 
-// most typical idiom with the setTimeout/interval funcs in most examples/code
+// setTimeout - clearInterval
 setTimeout(
     () => {
+        console.log('\n\n// setTimeout - clearInterval')
         console.log('stopping the interval "what_will_repeat_every_690ms"...')
         clearInterval(what_will_repeat_every_690ms)
     },
@@ -33,11 +36,13 @@ setTimeout(
 function promise_to_fail_or_succeed(succeed) {
     return new Promise(
         (resolve) => {
-            console.log('only one resolution path exists, and it has to be called')
+            console.log('\n\n/* promises (resolve / catch) */')
             if (succeed) {
+                console.log('we made sure this problem would .then')
                 resolve('yay we succeeded!')
                 return true
             } else {
+                console.log('we made sure this problem would .catch')
                 throw new Error('oh no we failed!')
             }
         }
@@ -75,6 +80,7 @@ function do_something_after_sleeping(time=1000) {
         (resolve, reject) => {
             setTimeout(  // setTimeout does its own error handling so .catch doesn't work on it
                 () => {
+                    console.log('\n\n/* promises (resolve reject / no-catch) */')
                     promise_id = (new Date()).toISOString()
                     console.log(`now calling either resolve or reject randomly after waiting for ${time}ms`)
                     rand = Math.random() * 10
@@ -118,7 +124,13 @@ function sleep(time=1000) {
     return new Promise(
         (resolve, reject) => {
             // reject and resolve are never used in this case
-            setTimeout(() => {console.log(`slept for ${time}ms`)}, time)  // doesnt return anything
+            setTimeout(
+                () => {
+                    console.log('\n\n/* promises async/await using Promises to fake a "sleep" ... */')
+                    console.log(`slept for ${time}ms`)
+                },
+                time
+            )  // doesnt return anything
         }
     )
 }
@@ -135,6 +147,7 @@ console.log('we will never be able to get this return here. wed have to do it wi
 
 /* promises that do return something or err */
 async function values() {
+    console.log('\n\n/* promises that do return something or err */')
     try {
         let success = await promise_to_fail_or_succeed(true)
         console.log('awaited success', success)
